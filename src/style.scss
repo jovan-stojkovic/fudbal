@@ -1,0 +1,17 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.popular-container {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    gap: 20px;
+}
+.club1 {
+    height: 200px;
+    width: 200px;
+    background-color: red;
+    border: black 2px solid;
+}
