@@ -15,18 +15,18 @@ import Individual from "./pages/Individual";
 const App = () => {
   return (
     <Router>
+      <Navbar />
       <main>
         <div className="container">
-          <Navbar />
           <Routes>
             <Route path="/home" element={<HomePage />} />
-            <Route path="/about-us" element={<AboutUs />} />
+            <Route path="/about_us" element={<AboutUs />} />
             <Route path="/find_club" element={<FindClub />} />
             <Route path="/you_play" element={<YouPlay />} />
             <Route path="/leagues" element={<Leagues />} />
             <Route path="/tournaments" element={<Tournaments />} />
             <Route path="/camps" element={<Camps />} />
-            <Route path="/camps" element={<Individual />} />
+            <Route path="/individual" element={<Individual />} />
           </Routes>
         </div>
       </main>

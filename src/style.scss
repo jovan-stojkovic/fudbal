@@ -1,17 +1,111 @@
 * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+main {
+  background-color: cornflowerblue;
+  height: 100vh;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 1200px;
+  background-color: white;
+}
+
+//NAVBAR
+
+.navbar {
+  background-color: gainsboro;
+
+  .navbar-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+
+    .logo {
+      img {
+        height: 150px;
+        transition: 0.2s;
+
+        &:hover {
+          scale: 1.05;
+          transition: 0.2s;
+        }
+      }
+    }
+
+    .navlinks {
+      display: flex;
+      gap: 10px;
+      a {
+        all: unset;
+        transition: 0.2s;
+
+        &:hover {
+          cursor: pointer;
+          scale: 1.05;
+          transition: 0.2s;
+          font-weight: 800;
+        }
+
+        &.active {
+          scale: 1.05;
+          font-weight: 800;
+          color: darkslategray;
+        }
+      }
+    }
+
+    .navbar-buttons {
+      display: flex;
+      gap: 10px;
+      align-items: center;
+
+      img {
+        height: 30px;
+      }
+
+      .language-button {
+        all: unset;
+        height: 50px;
+
+        &:hover {
+          scale: 1.1;
+          transition: 0.2s;
+          cursor: pointer;
+        }
+      }
+
+      .theme-toggle {
+        all: unset;
+        height: 50px;
+
+        &:hover {
+          scale: 1.1;
+          transition: 0.2s;
+          cursor: pointer;
+        }
+      }
+    }
+  }
 }
 
 .popular-container {
-    display: grid;
-    grid-template-columns: auto auto auto auto;
-    gap: 20px;
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  gap: 20px;
 }
+
 .club1 {
-    height: 200px;
-    width: 200px;
-    background-color: red;
-    border: black 2px solid;
+  height: 200px;
+  width: 200px;
+  background-color: red;
+  border: black 2px solid;
 }
