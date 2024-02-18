@@ -1,8 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap");
-@import url('https://fonts.googleapis.com/css2?family=Kode+Mono:wght@400..700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Kode+Mono:wght@400..700&display=swap");
 
 $light-green: rgb(206, 233, 209);
-$dark-green: rgb(31, 43, 33);;
+$dark-green: rgb(31, 43, 33);
 
 .luckiest-guy-regular {
   font-family: "Luckiest Guy", cursive;
@@ -27,10 +27,10 @@ $dark-green: rgb(31, 43, 33);;
 }
 
 main {
-    // background-image: url("./assets/images/football-background2.jpg");
-    // background-repeat: no-repeat;
-    // background-size: cover;
-    // background-position: bottom;
+  // background-image: url("./assets/images/football-background2.jpg");
+  // background-repeat: no-repeat;
+  // background-size: cover;
+  // background-position: bottom;
   height: 100vh;
   background-color: gainsboro;
 }
@@ -40,9 +40,9 @@ main {
   margin: 0 auto;
   max-width: 1000px;
   height: 100vh;
-    backdrop-filter: blur(5px);
-    box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px,
-      rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+  backdrop-filter: blur(5px);
+  box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px,
+    rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
 }
 
 //NAVBAR
@@ -102,10 +102,9 @@ main {
         font-style: normal;
         font-size: 17px;
 
-
         &:hover {
           cursor: pointer;
-          scale: 1.05;
+          scale: 1.1;
           transition: 0.2s;
           font-weight: 800;
         }
@@ -150,23 +149,36 @@ main {
           cursor: pointer;
         }
       }
+
+      .language-flag {
+        transition: 0.2s;
+        &:hover {
+          transition: 0.2s;
+          scale: 1.2;
+          cursor: pointer;
+        }
+      }
     }
   }
 }
 
-.language-flag {
-  transition: 0.2s;
-  &:hover {
-    transition: 0.2s;
-    scale: 1.2;
-    cursor: pointer;
-  }
-}
-
 .navbar.dark {
-  background-color: rgb(54, 50, 50);
+  background-color: $dark-green;
+  .navbar-container {
+    .navbar-topside {
+      .logo-text {
+        color: $light-green;
+      }
+    }
 
-  .logo-text {
-    color: rgb(187, 187, 187);
+    .navlinks {
+      a {
+        color: $light-green;
+
+        &.active {
+          color: rgb(122, 184, 132);
+        }
+      }
+    }
   }
 }
